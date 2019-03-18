@@ -1,0 +1,104 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 100%;
+  background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+  color: #777;
+}
+
+/* Container */
+.container {
+  position: absolute;
+  width: 24em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  animation: intro .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Profile Card */
+.profile {
+  position: relative;
+}
+
+.profile__section {
+  position: relative;
+  background: white;
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+  transform: translateY(-6em);
+  padding-top: 12em;
+  padding: 3em;
+  border-radius: .25em;
+  -webkit-filter: drop-shadow(0 0 2em rgba(0,0,0,0.2));
+  transition: 
+    opacity .4s ease-in-out,
+    height .4s ease-in-out,
+    transform .4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    padding .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  h2 {
+  	font-weight: 400;
+  	font-size: 2.5rem;
+  	white-space: nowrap;
+  	margin: 0;
+  }
+
+  h4 {
+  	margin: 0;
+  }
+
+  hr {
+  	border: 0;
+  	border-bottom: 1px solid #afafaf;
+  }
+
+  .social {
+  	> div {
+  		color: #fff;
+  		padding: 5px 10px;
+  		border-radius: 2px;
+  		margin: 4px 0;
+  		cursor: pointer;
+
+  		&:hover {
+  			opacity: 0.9;
+  		}
+
+  		&.fb-button {
+	      background: #3B5998;
+	    }
+
+	    &.gplus-button {
+	      background: #dd4b39;
+	    }
+	  }
+  }
+
+  .logout {
+    display: block;
+    color: #222;
+    margin-top: 15px;
+    text-decoration: none;
+  }
+
+  .delete {
+  	color: #fff;
+  	background: #880000;
+		padding: 5px 10px;
+		border-radius: 2px;
+		margin: 4px 0;
+		cursor: pointer;
+  }
+}

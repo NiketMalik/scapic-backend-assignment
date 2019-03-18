@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "dataloader": "^1.4.0",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "jsonwebtoken": "^8.5.0",
+    "mongoose": "^5.4.19",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  },
+  "scripts": {
+    "start": "node server"
+  }
+}
